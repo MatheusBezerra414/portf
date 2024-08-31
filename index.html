@@ -1,12 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Portfólio de Matheus Rodrigues</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>              
+
 <body>
-    <h1>HELLO WORLD</h1>
-    
+    <nav class="menu-nav-mobile" id="navMobile">
+        <div class="close-nav-mobile">
+            <button onclick="closeNavMobile()" style="color: #fff">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="nav-mobile-itens">
+            <button onclick="clickNavigateAndCloseModal()">
+                <a class="nav-link" href="#about">Sobre</a>
+            </button>
+            <button onclick="clickNavigateAndCloseModal()">
+                <a class="nav-link" href="#education">Formação</a>
+            </button>
+            <button onclick="clickNavigateAndCloseModal()">
+                <a class="nav-link" href="#portfolio">Portfólio</a>
+            </button>
+            <button onclick="clickNavigateAndCloseModal()">
+                <a class="nav-link" href="#contact">Contato</a>
+            </button>
+        </div>
+        <div class="nav-social">
+            <a href="https://github.com/MatheusBezerra414"><i class="fab fa-github-square"></i> GitHub</a></li>
+            <a href="https://www.linkedin.com/in/matheus-rodrigues-dev/"><i class="fab fa-linkedin"></i> Linkedin</a>
+            </li>
+        </div>
+    </nav>
+    <header>
+        <div class="sticky-menu nav-mobile">
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="images/logo.svg" alt="Matheus Rodrigues">
+                </a>
+            </div>
+
+            <div class="nav-open-mobile">
+                <button onclick="openNavMobile()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="sticky-menu">
+            <div class="menu-nav">
+                <div class="nav-logo">
+                    <img src="images/logo.svg" alt="Matheus Rodrigues">
+                </div>
+                <ul>
+                    <li><a class="menu-item" href="#about">Sobre</a></li>
+                    <li><a class="menu-item" href="#education">Formação</a></li>
+                    <li><a class="menu-item" href="#portfolio">Portfólio</a></li>
+                    <li><a class="menu-item" href="#contact">Contato</a></li>
+                </ul>
+                <div class="nav-social">
+                    <ul>
+                        <li><a href="https://github.com/MatheusBezerra414"><i class="fab fa-github-square"></i> GitHub</a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/matheus-rodrigues-dev/"><i class="fab fa-linkedin"></i>
+                                Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header-content container">
+            <div class="header-content-text">
+                <h1>Talk is cheap. Show me the code.</h1>
+                <p>Olá, eu sou Matheus Rodrigues</p>
+                <button onclick="location.href='#contact'">Me envie uma mensagem!</button>
+            </div>
+            <div class="header-content-img">
+                <img src="images/foto-dev.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-left">
+                <div class="cards-list">
+                    <div class="card">
+                        <div class="card-head">
+                            <div class="title">
+                                Web3
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Crio soluções blockchain seguras e escaláveis, 
+                                focadas em contratos inteligentes e dApps, 
+                                usando Solidity e HyperLedger.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-head">
+                            <div class="title">
+                                Front-End
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Desenvolvo interfaces modernas e responsivas, 
+                                com foco em usabilidade e performance, 
+                                usando React e Angular.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-head">
+                            <div class="title">
+                                Back-End
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Construo back-ends escaláveis e seguros
+                                 com Node.js e bancos de dados SQL/NoSQL, 
+                                 garantindo eficiência e robustez.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="section-right" style="text-align: left;">
+                <h1>Sobre mim</h1>
+                <h2>Olá, eu sou o Matheus!</h2>
+                <p>Sou um Desenvolvedor Full Stack com especialização em blockchain e Web3, 
+                    com uma carreira marcada por uma abordagem meticulosa na resolução de 
+                    problemas e entrega de soluções escaláveis. Tenho experiência em várias 
+                    tecnologias, incluindo Solidity, HyperLedger, Node.js, React, Angular, 
+                    além de implantar aplicações em AWS e GCP. Comprometido com a inovação, 
+                    busco transformar desafios complexos em soluções práticas, sempre focado 
+                    em impulsionar o progresso através das tecnologias mais recentes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container education-section">
+            <div class="section-title">
+                <h2>Formação Educacional</h2>
+            </div>
+            <div class="education-cards">
+                <div class="education-card">
+                    <div class="education-card-img">
+                        <img src="/images/software-engineer.jpg" alt="Engenheria de software">
+                    </div>
+                    <div class="education-card-text">
+                        <h4>
+                            Bacharel em Engenharia de software
+                        </h4>
+                        <p>
+                            algumas informações sobre a formação e tal e tal
+                        </p>
+                    </div>
+                    <div class="education-card-info">
+                        <div class="more-info">
+                            <i class="fas fa-calendar-alt"></i> 01/06/2023
+                        </div>
+                        <div class="more-info">
+                            <i class="fas fa-briefcase"></i> Technology
+                        </div>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-card-img">
+                        <img src="/images/software-engineer-mobile.jpg" alt="Engenharia para dispositivos móveis">
+                    </div>
+                    <div class="education-card-text">
+                        <h4>
+                            Especialização em Eng. de software dispositivos móveis
+                        </h4>
+                        <p>
+                            algumas informações sobre a formação e tal e tal
+                        </p>
+                    </div>
+                    <div class="education-card-info">
+                        <div class="more-info">
+                            <i class="fas fa-calendar-alt"></i> 01/02/2024
+                        </div>
+                        <div class="more-info">
+                            <i class="fas fa-briefcase"></i> Technology
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+            
+        </div>
+    </section>
+
+    <section id="portfolio">
+       <div class="container">
+        <div class="section-left">
+            <h4>
+                Dê uma olhada no que criei e inspire-se
+            </h4>
+            <a href="https://github.com/MatheusBezerra414" target="_blank">
+                Veja mais
+            </a>
+        </div>
+        <div class="section-right">
+            <div class="portfolio-imgs">
+                <img class="overlay-img top-left" src="/images/img-port.png" alt="">
+            </div>
+
+        </div>
+       </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form onsubmit="sendForm()">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Matheus Rodrigues. Todos os direitos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
