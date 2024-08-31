@@ -285,7 +285,7 @@ section h2 {
 }
  /* PORTFOLIO */
 #portfolio{
-    background: url(/images/bg-codes.jpg);
+    background: url("images/bg-codes.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
