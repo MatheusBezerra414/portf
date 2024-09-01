@@ -13,12 +13,15 @@
 </head>              
 
 <body>
+    <!-- MENU MOBILE QUE APARECE PARA TELA MENORES -->
     <nav class="menu-nav-mobile" id="navMobile">
         <div class="close-nav-mobile">
             <button onclick="closeNavMobile()" style="color: #fff">
                 <i class="fas fa-times"></i>
             </button>
         </div>
+        <!-- O METODO CLICK clickNavigateAndCloseModal() AUXILIA NA
+          NAVEGAÇÃO DA PÁGINA E DEPOIS FECHA O MENU MOBILE-->
         <div class="nav-mobile-itens">
             <button onclick="clickNavigateAndCloseModal()">
                 <a class="nav-link" href="#about">Sobre</a>
@@ -40,6 +43,8 @@
         </div>
     </nav>
     <header>
+        <!-- QUANDO A TELA É PEQUENA, O MENU PRINCIPAL SOME E APARECE ESTE. 
+         QUANDO CLICADO NO ICONE APARECE O MENU MOBILE SOBREPOSTO NA TELA -->
         <div class="sticky-menu nav-mobile">
             <div class="nav-logo">
                 <a href="#">
@@ -78,7 +83,9 @@
         <div class="header-content container">
             <div class="header-content-text">
                 <h1>Talk is cheap. </br>Show me the code.</h1>
-                <p>Olá, eu sou Matheus Rodrigues, apaixonado por programação e em desenvolver coisas legais.</p>
+                <p style="text-align: left;">Olá, eu sou Matheus Rodrigues, apaixonado por programação e em desenvolver coisas legais., 
+                    apaixonado por programação e em
+                     desenvolver coisas legais.</p>
                 <button onclick="location.href='#contact'">Me envie uma mensagem!</button>
             </div>
             <div class="header-content-img">
